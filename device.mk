@@ -457,7 +457,15 @@ PRODUCT_PACKAGES += \
     dhcpcd.conf \
     wificond \
     wpa_supplicant \
-    wpa_supplicant.conf
+    wpa_supplicant.conf \
+    hostapd_default.conf \
+    p2p_supplicant_overlay.conf \
+    wpa_supplicant_overlay.conf \
+    WCNSS_qcom_cfg.ini
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/hostapd:vendor/bin/hw/hostapd \
+    $(LOCAL_PATH)/wifi/hostpad.android.rc:vendor/etc/init/hostpad.android.rc
 
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
