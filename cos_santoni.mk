@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The Havoc-OS Project
+# Copyright (C) 2019 The Cosmic-OS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,22 +16,15 @@
 
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
-# Inherit some common Havoc-OS stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+# Inherit some common Cosmic-OS stuff.
+$(call inherit-product, vendor/cos/config/common_full_phone.mk)
 
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4
-PRODUCT_NAME := havoc_santoni
+PRODUCT_NAME := cos_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-
-# Official
-export export HAVOC_BUILD_TYPE=Official
-
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.havoc.maintainer=STARGAZER
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
