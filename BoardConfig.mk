@@ -135,6 +135,9 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+#EAP-SIM security
+DISABLE_EAP_PROXY := true
+
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
 
