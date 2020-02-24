@@ -17,12 +17,13 @@
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
 # Inherit some common Cosmic-OS stuff.
-$(call inherit-product, vendor/cos/config/common_full_phone.mk)
+$(call inherit-product, vendor/cygnus/configs/common.mk)
+include device/qcom/common/common.mk
 
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4
-PRODUCT_NAME := cos_santoni
+PRODUCT_NAME := cygnus_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
