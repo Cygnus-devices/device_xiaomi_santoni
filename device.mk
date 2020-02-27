@@ -419,7 +419,12 @@ PRODUCT_PACKAGES += \
     qti-telephony-utils \
     qti_telephony_utils.xml \
     ims-ext-common \
-    ims_ext_common.xml
+    ims_ext_common.xml \
+    services-ext
+
+# IMS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
