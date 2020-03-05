@@ -155,6 +155,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := msm8937
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libldacBT_dec
+
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8937 \
