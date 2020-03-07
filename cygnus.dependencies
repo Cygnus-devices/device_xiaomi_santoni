@@ -1,0 +1,33 @@
+[
+  {
+    "repository": "Atifsid/vendor_xiaomi_santoni",
+    "target_path": "vendor/xiaomi",
+    "branch": "ten"
+  },
+  {
+    "repository": "Stargazer19/kernel_xiaomi_santoni",
+    "target_path": "kernel/xiaomi/msm8937",
+    "branch": "ten-caf"
+  },
+  {
+    "repository": "AOSPA/android_hardware_qcom_display",
+    "target_path": "hardware/qcom/display",
+    "branch": "quartz-89xx"
+  },
+  {
+    "repository": "AOSPA/android_hardware_qcom_media",
+    "target_path": "hardware/qcom/media",
+    "branch": "quartz-89xx"
+  },
+  {
+    "repository": "bionicBUG/hardware_qcom_audio",
+    "target_path": "hardware/qcom/audio",
+    "branch": "q"
+  },
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources_devicesettings",
+    "branch": "lineage-17.1"
+  }
+]
