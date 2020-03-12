@@ -27,6 +27,10 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_SUFFIX := -timestamp
 
+LOCAL_PACKAGE_NAME : = SetupWizard
+LOCAL_PRIVILEGED_MODULE : = true
+LOCAL_OVERIDES_PACKAGES : = Provision
+
 include $(BUILD_SYSTEM)/base_rules.mk
 
 $(LOCAL_BUILT_MODULE): ACTUAL_INI_FILE := /data/vendor/wifi/WCNSS_qcom_cfg.ini
